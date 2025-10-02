@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>The Neighborhood Brew - Ethically Sourced Coffee & Community</title>
+    <link rel="stylesheet" href="style.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700;800;900&display=swap" rel="stylesheet">
+</head>
+<body class="bg-coffee-light font-sans text-coffee-text-dark antialiased">
+
+    <header class="header">
+        <nav class="container nav-content">
+            <a href="#" class="logo">
+                <span class="logo-tan">The</span> Brew
+            </a>
+            <div class="nav-links" id="desktop-nav-links">
+                <li><a href="#home">Home</a></li>
+                <li><a href="#commitment">Commitment</a></li>
+                <li><a href="#amenities">Amenities</a></li>
+                <li><a href="#menu">Menu</a></li>
+            </div>
+            <a href="#preorder" class="cta-button">
+                Pre-Order
+            </a>
+            <button class="mobile-menu-toggle" id="menu-toggle" aria-label="Toggle Navigation">
+                <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                    <line x1="4" y1="12" x2="20" y2="12"></line>
+                    <line x1="4" y1="6" x2="20" y2="6"></line>
+                    <line x1="4" y1="18" x2="20" y2="18"></line>
+                </svg>
+            </button>
+        </nav>
+        <div id="mobile-menu" class="mobile-menu-dropdown">
+             <li><a href="#home">Home</a></li>
+             <li><a href="#commitment">Commitment</a></li>
+             <li><a href="#amenities">Amenities</a></li>
+             <li><a href="#menu">Menu</a></li>
+            <a href="#preorder" class="mobile-cta-button">Pre-Order</a>
+        </div>
+    </header>
+
+    <main>
+        <section id="home" class="hero">
+            <div class="container hero-layout-grid">
+                <div class="hero-left">
+                    <div class="hero-image-container">
+                        <img 
+                            src="assets/coffee.jpg" 
+                            alt="High quality roast coffee beans, ready for grinding" 
+                            class="hero-image"
+                        >
+                    </div>
+                </div>
+
+                <div class="hero-right">
+                    <div class="hero-content">
+                        <h1 class="hero-title">
+                            Your Neighborhood Spot for Exceptional Coffee
+                        </h1>
+                        <p class="hero-subtitle">
+                            Ethically Sourced. Zero Waste. Unbeatable Wi-Fi.
+                        </p>
+                        <a id="preorder" href="#menu" class="hero-cta-button">
+                            See Our Daily Menu
+                        </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="commitment" class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 py-20">
+            <h2 class="text-4xl font-extrabold centered-heading text-coffee-dark mb-12">
+                Our Commitment
+            </h2>
+
+            <div class="commitment-grid">
+                <div class="commitment-item">
+                    <svg class="commitment-icon" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                        <path d="M18 8c0 4.5-6 9-6 9s-6-4.5-6-9a6 6 0 0 1 12 0z"/>
+                        <path d="M12 15c-1.6 0-3-1.4-3-3s1.4-3 3-3 3 1.4 3 3-1.4 3-3 3z"/>
+                    </svg>
+                    <h3 class="text-xl font-bold mb-2">Quality Sourcing</h3>
+                    <p class="text-sm text-gray-600">
+                        We directly partner with sustainable farms to ensure every bean is ethically sourced and perfectly roasted.
+                    </p>
+                </div>
+
+                <div class="commitment-item">
+                    <svg class="commitment-icon" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                        <path d="M17 21v-2a4 4 0 0 0-4-4H5a4 4 0 0 0-4 4v2"/>
+                        <circle cx="9" cy="7" r="4"/>
+                        <path d="M23 11a7 7 0 0 0-14 0c0 5 7 9 7 9s7-4 7-9z"/>
+                    </svg>
+                    <h3 class="text-xl font-bold mb-2">Environmental Impact</h3>
+                    <p class="text-sm text-gray-600">
+                        From compostable packaging to reduced water usage, we strive for minimal waste and maximum respect for nature.
+                    </p>
+                </div>
+
+                <div class="commitment-item">
+                    <svg class="commitment-icon" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                        <path d="M16 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"/>
+                        <circle cx="12" cy="7" r="4"/>
+                        <path d="M19 12h3M22 15h-3M19 9h-3"/>
+                    </svg>
+                    <h3 class="text-xl font-bold mb-2">Local Community</h3>
+                    <p class="text-sm text-gray-600">
+                        We actively support local artists and host events to build a strong, inclusive gathering space.
+                    </p>
+                </div>
+
+                <div class="commitment-item">
+                    <svg class="commitment-icon" xmlns="http://www.w3.org/2000/svg" fill="none"
+                        viewBox="0 0 24 24" stroke="currentColor" stroke-width="1.5">
+                        <path d="M18 8h1a4 4 0 0 1 0 8h-1"/>
+                        <path d="M2 8h16v9a4 4 0 0 1-4 4H6a4 4 0 0 1-4-4V8z"/>
+                    </svg>
+                    <h3 class="text-xl font-bold mb-2">Craft & Excellence</h3>
+                    <p class="text-sm text-gray-600">
+                        Every drink is crafted by our expert baristas, ensuring meticulous preparation and unparalleled taste.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <div id="productivity-menu-wrapper">
+            <section id="amenities" class="section amenities-section py-20">
+                <div class="container mx-auto amenities-container max-w-7xl px-4 flex flex-col lg:flex-row items-center justify-between">
+                    
+                    <div class="amenities-content w-full lg:w-1/2 text-center">
+                        
+                        <h2 class="section-title text-3xl font-extrabold mb-8 text-white">
+                            Designed for Productivity
+                        </h2>
+                        
+                        <div class="organic-amenities-grid">
+                            
+                            <div class="organic-item">
+                                <div class="organic-clip-container">
+                                    <img src="assets/amenities/wifi.jpg" alt="Fast Wi-Fi" class="clipped-image" />
+                                </div>
+                                <p class="organic-item-label">Reliable Wi-Fi</p>
+                            </div>
+
+                            <div class="organic-item">
+                                <div class="organic-clip-container">
+                                    <img src="assets/amenities/outlets.jpg" alt="Power Outlets" class="clipped-image" />
+                                </div>
+                                <p class="organic-item-label">Plenty of Outlets</p>
+                            </div>
+                            
+                            <div class="organic-item">
+                                <div class="organic-clip-container">
+                                    <img src="assets/amenities/friendly baristas.jpg" alt="Friendly Baristas" class="clipped-image" />
+                                </div>
+                                <p class="organic-item-label">Friendly Baristas</p>
+                            </div>
+                            
+                            <div class="organic-item">
+                                <div class="organic-clip-container">
+                                    <img src="assets/amenities/quiet.jpg" alt="Quiet Zone" class="clipped-image" />
+                                </div>
+                                <p class="organic-item-label">Quiet Zones</p>
+                            </div>
+
+                        </div>
+                    </div>
+                    
+                </div>
+            </section>
+
+            <section id="menu" class="menu-section py-16">
+                <div class="container mx-auto max-w-7xl px-4">
+
+                    <h2 class="menu-section-title text-4xl font-extrabold mb-10 w-full">Menu</h2>
+
+                    <h3 class="menu-title category-title text-3xl font-bold mb-8 w-full">Fresh Pastries</h3>
+                    <div class="menu-row">
+                        
+                        <div class="menu-card new-style-card"> 
+                            <div class="card-image-wrapper">
+                                <img src="assets/menu/almond.jpg" alt="Almond Croissant" class="card-image-thumb">
+                                <div class="card-badge">⭐ Bestseller</div>
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title">Almond Croissant</h3>
+                                <p class="card-detail">FLAKY, BUTTERY, NUTTY</p>
+                                <p class="card-sub-detail">450 kcal</p>
+                            </div>
+                            <div class="card-footer">
+                                <span class="card-price-display">$4.00</span>
+                                <button class="add-item-btn">Add Item</button>
+                            </div>
+                        </div>
+
+                        <div class="menu-card new-style-card"> 
+                            <div class="card-image-wrapper">
+                                <img src="assets/menu/scones.jpg" alt="Blueberry Scone" class="card-image-thumb">
+                                <div class="card-badge">🫐 Fruity</div>
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title">Blueberry Scone</h3>
+                                <p class="card-detail">TENDER, ZESTY, CRUMBLY TOP</p>
+                                <p class="card-sub-detail">380 kcal</p>
+                            </div>
+                            <div class="card-footer">
+                                <span class="card-price-display">$3.50</span>
+                                <button class="add-item-btn">Add Item</button>
+                            </div>
+                        </div>
+
+                        <div class="menu-card new-style-card">
+                            <div class="card-image-wrapper">
+                                <img src="assets/menu/specials.jpg" alt="Daily Special" class="card-image-thumb">
+                                <div class="card-badge">🎉 Seasonal</div>
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title">Daily Special</h3>
+                                <p class="card-detail">ASK YOUR BARISTA FOR TODAY'S OFFER</p>
+                                <p class="card-sub-detail">CALORIES VARY</p>
+                            </div>
+                            <div class="card-footer">
+                                <span class="card-price-display">Varies</span>
+                                <button class="add-item-btn">Add Item</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3 class="menu-title category-title text-3xl font-bold mb-8 w-full mt-16">Espresso Classics</h3>
+                    <div class="menu-row">
+                        
+                        <div class="menu-card new-style-card"> 
+                            <div class="card-image-wrapper">
+                                <img src="assets/menu/latte.jpg" alt="Latte" class="card-image-thumb">
+                                <div class="card-badge">🥛 Customizable</div>
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title">Latte (Hot/Iced)</h3>
+                                <p class="card-detail">CREAMY, SMOOTH, CUSTOMIZABLE</p>
+                                <p class="card-sub-detail">TALL | 200 kcal</p>
+                            </div>
+                            <div class="card-footer">
+                                <span class="card-price-display">$5.25</span>
+                                <button class="add-item-btn">Add Item</button>
+                            </div>
+                        </div>
+
+                        <div class="menu-card new-style-card">
+                            <div class="card-image-wrapper">
+                                <img src="assets/menu/Cozy Cappuccino with Latte Art - Warm Café Ambiance.jpg" alt="Cappuccino" class="card-image-thumb">
+                                <div class="card-badge">☁️ Foamy Top</div>
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title">Cappuccino</h3>
+                                <p class="card-detail">RICH ESPRESSO, VELVETY FOAM</p>
+                                <p class="card-sub-detail">SHORT | 150 kcal</p>
+                            </div>
+                            <div class="card-footer">
+                                <span class="card-price-display">$4.75</span>
+                                <button class="add-item-btn">Add Item</button>
+                            </div>
+                        </div>
+
+                        <div class="menu-card new-style-card"> 
+                            <div class="card-image-wrapper">
+                                <img src="assets/menu/expresso.jpg" alt="Espresso Shot" class="card-image-thumb">
+                                <div class="card-badge">⚡ Pure Energy</div>
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title">Espresso Shot</h3>
+                                <p class="card-detail">BOLD, INTENSE, CLEAN FINISH</p>
+                                <p class="card-sub-detail">1 SHOT | 5 kcal</p>
+                            </div>
+                            <div class="card-footer">
+                                <span class="card-price-display">$3.00</span>
+                                <button class="add-item-btn">Add Item</button>
+                            </div>
+                        </div>
+                    </div>
+
+                    <h3 class="menu-title category-title text-3xl font-bold mb-8 w-full mt-16">Brewed Coffee</h3>
+                    <div class="menu-row">
+                        
+                        <div class="menu-card new-style-card">
+                            <div class="card-image-wrapper">
+                                <img src="assets/menu/drip coff.jpg" alt="Drip Coffee" class="card-image-thumb">
+                                <div class="card-badge">🔥 Classic</div>
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title">Drip Coffee</h3>
+                                <p class="card-detail">HOT, FRESHLY BREWED, BOTTOMLESS</p>
+                                <p class="card-sub-detail">MED | 2 kcal</p>
+                            </div>
+                            <div class="card-footer">
+                                <span class="card-price-display">$3.00</span>
+                                <button class="add-item-btn">Add Item</button>
+                            </div>
+                        </div>
+
+                        <div class="menu-card new-style-card">
+                            <div class="card-image-wrapper">
+                                <img src="assets/menu/brew.jpg" alt="Cold Brew" class="card-image-thumb">
+                                <div class="card-badge">❄️ Low Acid</div>
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title">Cold Brew</h3>
+                                <p class="card-detail">SMOOTH, STRONG, NATURALLY SWEET</p>
+                                <p class="card-sub-detail">LARGE | 15 kcal</p>
+                            </div>
+                            <div class="card-footer">
+                                <span class="card-price-display">$4.50</span>
+                                <button class="add-item-btn">Add Item</button>
+                            </div>
+                        </div>
+
+                        <div class="menu-card new-style-card">
+                            <div class="card-image-wrapper">
+                                <img src="assets/menu/pour over.jpg" alt="Pour-Over" class="card-image-thumb">
+                                <div class="card-badge">💎 Premium</div>
+                            </div>
+                            <div class="card-body">
+                                <h3 class="card-title">Pour-Over (Single Origin)</h3>
+                                <p class="card-detail">HAND-CRAFTED, BRIGHT, DISTINCT</p>
+                                <p class="card-sub-detail">SINGLE SERVING | 3 kcal</p>
+                            </div>
+                            <div class="card-footer">
+                                <span class="card-price-display">$6.00</span>
+                                <button class="add-item-btn">Add Item</button>
+                            </div>
+                        </div>
+                        
+                    </div>
+                </div>
+            </section>
+        </div>
+
+
+
+
+    </main>
+
+    <footer class="footer">
+        <div class="container footer-grid">
+            <div>
+                <h4 class="footer-heading">The Brew</h4>
+                <p class="footer-text">Your local source for ethically sourced coffee, fresh bakes, and a perfect spot to work or relax.</p>
+            </div>
+
+            <div>
+                <h4 class="footer-heading">Visit</h4>
+                <ul class="footer-links">
+                    <li><a href="#home">Home</a></li>
+                    <li><a href="#commitment">Commitment</a></li>
+                    <li><a href="#amenities">Amenities</a></li>
+                    <li><a href="#menu">Menu</a></li>
+                </ul>
+            </div>
+
+            <div>
+                <h4 class="footer-heading">Contact & Hours</h4>
+                <p class="footer-text">123 Coffee Lane, Central District</p>
+                <p class="footer-text footer-hours">Mon - Fri: 6:00 AM - 7:00 PM</p>
+                <p class="footer-text">Sat - Sun: 7:00 AM - 5:00 PM</p>
+                <p class="footer-text footer-phone">(555) 123-BREW</p>
+            </div>
+
+            <div>
+                <h4 class="footer-heading">Follow Us</h4>
+                <div class="social-links">
+                    <a href="#" aria-label="Facebook">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M18 2h-3a5 5 0 0 0-5 5v3H7v4h3v8h4v-8h3l1-4h-4V7a1 1 0 0 1 1-1h3z"/></svg>
+                    </a>
+                    <a href="#" aria-label="Instagram">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect width="20" height="20" x="2" y="2" rx="5" ry="5"/><path d="M16 11.37A4 4 0 1 1 12.63 8 4 4 0 0 1 16 11.37z"/><line x1="17.5" y1="6.5" x2="17.51" y2="6.5"/></svg>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="copyright">
+            <p>&copy; 2025 The Neighborhood Brew. All rights reserved.</p>
+        </div>
+    </footer>
+    
+    <script src="script.js"></script>
+</body>
+</html>
